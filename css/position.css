@@ -1,0 +1,42 @@
+.big{
+    border: 2px solid black;
+}
+/* .stat{
+    border: 2px solid red;
+    position: static;
+    padding: 2px 12px;
+    height: 25px;
+}
+.stick{
+    border: 2px solid green;
+    position: sticky;
+    top: 0;
+}
+.stic{
+    border: 2px solid orange;
+    position: sticky;
+    top: 0;
+}
+.relat{
+    border: 2px solid yellowgreen;
+    position: relative;
+    top: 125px;
+    bottom: 25px;
+    left: 12px;
+}
+.fix{
+    border: 2px solid rgb(32, 165, 218);
+    position: fixed;
+    top: 8px;
+} */
+.big{
+    margin-top: 40px;
+    position: relative;
+}
+.abs{
+    border: 2px solid rgb(255, 0, 255);
+    height: 100px;
+    position: absolute;
+    top: 5px;
+    right: 0px;
+}

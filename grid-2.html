@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body > *{
+            background-color: aquamarine;
+            color: aliceblue;
+            border: 2px solid #bbb;
+            padding: 1rem;
+        }
+        body{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            height: 100vh;
+            grid-template-rows: 64px 1fr 64px;
+            gap: 1rem;
+            grid-template-areas: 
+            "header header"
+            "content sidebar"
+            "footer footer";
+        }
+        /* header, footer{
+            grid-column: 1 / -1;
+        } */
+        header{
+            grid-area: header;
+        }
+        footer{
+            grid-area: footer;
+        }
+        aside{
+            grid-area: sidebar;
+        }
+        main{
+            grid-area: content;
+        }
+
+        @media(max-width:768px) {
+            body{
+                grid-template-columns: 1fr;
+                grid-template-rows: 64px 1fr 1fr 64px;
+                grid-template-areas: 
+            "header"
+            "content" 
+            "sidebar"
+            "footer";
+            }
+            
+        }
+        </style>
+</head>
+<body>
+    <header>header</header>
+    <main>main content</main>
+    <aside>aside</aside>
+    <footer>footer</footer>
+</body>
+</html>

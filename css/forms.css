@@ -1,0 +1,35 @@
+input[type = "text"]{
+    color: red;
+    background-color: aqua;
+}
+input[type = "password"]{
+    background-color: lightcoral;
+}
+/* a[href= "https://google.co.in"]{
+    color:red
+} */
+/* a[href *= "google"]{
+    color: red;
+} */
+/* a[href ^= "https"]{
+    color: green;
+} */
+a[href $= ".com"]{
+    color: pink;
+}
+:focus{
+    height: 2rem;
+    background-color: rgb(76, 225, 65);
+}
+a:link{
+    color: blue;
+}
+a:visited{
+    color: rgba(15, 117, 234, 0.603);
+}
+a:hover{
+    color: green;
+}
+a:active{
+    color: black;
+}

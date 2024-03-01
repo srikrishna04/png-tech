@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/forms.css">
+</head>
+<body>
+    <h2>links</h2>
+    <a href="https://google.co.in">Google India</a><br>
+    <a href="https://google.co.uk">Google UK</a><br>
+    <a href="https://flipkart.com">Flipkart</a><br>
+    <a href="facebook.com">Facebook</a><br>
+
+    <form method="get" action="layout.html">
+    <label for="user" align:"right">Username : </label>
+    <input type="text" id="user" placeholder="username" required><br>
+    <label for="mail" align="right">Email : </label>
+    <input type="email" id="mail" placeholder="email" required><br>
+    <label for="pass" align:"right">password : </label>
+    <input type="password" id="pass" placeholder="password" required><br>
+    <label for="radiobutton" align: "right">Gender : </label>
+    <input type="radio" name="R1" id="radibutton" value="m">Male
+    <input type="radio" name="R1" id="radiobutton" value="f">Female<br>
+    <label for="value1">Apple</label>
+    <input type="checkbox" id="value1" name="value1" value="apple" >
+    <label for="value2">Mango</label>
+    <input type="checkbox" id="value2" name="value2" value="mango" >
+    <label for="value3">Orange</label>
+    <input type="checkbox" id="value3" name="value3" value="apple" ><br>
+    <label for="dropdown">Country : </label>
+    <select name="group" id="dropdown" placeholder="country">
+        <option value="i">india</option>
+        <option value="u">usa</option>
+        <option value="c">china</option>
+        <option value="r">russia</option>
+        <option value="g">germany</option>
+        <option value="a">australia</option>
+    </select> <br>
+    <p>Comment below</p>
+    <textarea name="t1" id="comm" rows="20px" cols="40px" placeholder="type here"></textarea><br>
+    Pick-color : <input type="color" name="" id=""><br>
+    Date : <input type="date" ><br>
+    <input type="submit" value="login">
+    <input type="reset" value="reload">
+    </form>
+</body>
+</html>

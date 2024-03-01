@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p:first-child{
+            color: red;
+        }
+        p:first-of-type{
+            color:green;
+        }
+        p:last-child{
+            color:orange
+        }
+        p:last-of-type{
+            color: rgb(146, 127, 255);
+        }
+        P:nth-child(2){
+            color: red;
+        }
+        p:nth-child(2n){
+            color:rgb(230, 192, 192)
+        }
+        p:nth-of-type(2){
+            color: brown;
+        }
+        body :not(p){
+            color: blueviolet;
+        }
+        body :not(.cls){
+            color: rgb(46, 239, 239);
+        }
+        div:empty{
+            background-color: black;
+            border: 2px solid red;
+            width: 50px;
+            height: 50px;
+        }
+        :root{
+            background-color: #ddd;
+            color: #333;
+        }
+        html{
+            background-color: #ddd;
+            color: #333;
+        }
+        :target{
+            outline: 3px solid rgb(0, 255, 17);
+        }
+        :focus{
+            color: rgb(230, 16, 169);
+            background-color: aliceblue;
+        }
+        ::selection{
+            color: blue;
+            background-color: #0e0e0e8f;
+        }
+        h1::before{
+            content: 'hello';
+            display: block;
+            color: brown;
+            border: 2px solid salmon;
+        }
+        h1::after{
+            content: '?';
+            color: rgb(30, 78, 224);
+            border-radius: 2px solid gray;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p>I am the first paragraph</p>
+        <p>I am the second paragraph</p>
+        <p>I am the third paragraph</p>
+        <p>I am the first paragraph</p>
+        <p>I am the second paragraph</p>
+        <p>I am the third paragraph</p>
+        <h1>I am heading and last element</h1>
+    </header>
+    <header>
+        <h1>I am heading and first element</h1>
+        <p>I am the first paragraph</p>
+        <p>I am the second paragraph</p>
+        <p>I am the third paragraph</p>
+    </header>
+    <div></div>
+    <p>i am direct direct child of body</p>
+    <p>i an second direct child of body</p>
+    <div class="conta">
+        <p>I am the first paragraph</p>
+        <p>I am the second paragraph</p>
+        <p>I am the third paragraph</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        .box{
+            height: 100px;
+            width: 100px;
+            background-color: rgb(17, 189, 189);
+            border-radius: 50%;
+            position: relative;
+            /* animation: momemt 2s ease-in-out 1s 5 forwards; */
+            animation-name: moment;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+        /* animation-iteration-count: infinite; */
+        }
+        @keyframes moment {
+            0%{
+                /* top: 0px;
+                left: 0px; */
+                transform: rotate(0deg);
+                background-color: blue;
+            }
+            25%{
+                /* top: 0px;
+                left: 300px; */
+                transform: rotate(90deg);
+                background-color: darkgoldenrod;
+            }
+            50%{
+                /* top: 300px;
+                left: 300px; */
+                transform: rotate(180deg);
+                background-color: rgb(234, 14, 14);
+            }
+            75%{
+                /* top: 300px;
+                left: 0px; */
+                transform: rotate(270deg);
+                background-color: fuchsia;
+            }
+            100%{
+                /* top: 0px;
+                bottom: 0px; */
+                transform: 360;
+                background-color: chocolate;
+            }
+        }
+        .box{
+            transition: width 500ms ease-in,
+            height 1s ease-in,
+            background 2s ease-in;
+        }
+        .box:hover{
+width: 500px;
+height: 500px;
+background-color: aquamarine;
+
+        }
+    </style>
+</head>
+<body>
+<div class="box"></div>
+    
+</body>
+</html>
